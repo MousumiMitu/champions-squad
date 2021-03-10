@@ -1,0 +1,8 @@
+.container-part {
+  background-color: rgb(245, 245, 245);
+}
+.main-section {
+  width: 85%;
+  margin: 20px auto;
+  /* border: 1px solid red; */
+}

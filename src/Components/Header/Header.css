@@ -1,0 +1,18 @@
+.header-section {
+  height: 320px;
+  background-image: url("images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+.overlay {
+  height: 320px;
+  /* background-color: rgba(0, 0, 0, 0.39); */
+  position: relative;
+}
+.overlay h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
