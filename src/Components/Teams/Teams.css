@@ -13,10 +13,10 @@
     to bottom,
     white,
     rgb(192, 222, 235),
-    rgb(44, 124, 199)
+    rgb(8, 139, 214)
   );
   border-radius: 10px;
-  box-shadow: 2px 2px 5px gray;
+  /* box-shadow: 2px 2px 8px #fff; */
   color: white;
 }
 .cart-box h3 {

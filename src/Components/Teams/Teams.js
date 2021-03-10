@@ -12,7 +12,7 @@ const Teams = (props) => {
     history.push(url);
   };
   return (
-    <div className="col-md-4 text-center  cart-box">
+    <div className="col-md-4 text-center  cart-box ">
       <div className="badge-img">
         <img src={strTeamBadge} alt="" />
       </div>
