@@ -41,7 +41,12 @@ const TeamDetails = () => {
     <div style={{ background: "rgb(3, 18, 59)" }}>
       <div className="details-box">
         <div className="logo-box">
-          <img src={strTeamBanner} alt="" />
+          <div className="banner-img">
+            <img src={strTeamBanner} alt="" />
+          </div>
+          <div className="badge-img">
+            <img src={strTeamBadge} alt="" />
+          </div>
         </div>
       </div>
       <div className="details-part">
