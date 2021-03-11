@@ -7,7 +7,7 @@
 }
 .cart-box {
   /* border: 1px solid red; */
-  width: 30%;
+  width: 85%;
   margin: 20px auto;
   background: linear-gradient(
     to bottom,
@@ -41,4 +41,9 @@ button {
   color: rgb(5, 60, 133);
   /* text-shadow: 1px 1px 10px rgb(26, 133, 233); */
   font-weight: bold;
+}
+@media only screen and (min-width: 600px) {
+  .cart-box {
+    width: 80%;
+  }
 }

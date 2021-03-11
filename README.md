@@ -10,4 +10,4 @@ This is a simple react router project of some football teams information with he
 - Responsive for desktop & mobile version
 - Used font awesome icon
 
-[Live server link](https://upbeat-davinci-e9b099.netlify.app).
+[Live server link for this project](https://upbeat-davinci-e9b099.netlify.app).

@@ -16,7 +16,7 @@ const Home = () => {
     <div className="container-part">
       <Header></Header>
       <div className="main-section">
-        <div className="row">
+        <div className="display-cart">
           {teams.map((team) => (
             <Teams teams={team}></Teams>
           ))}

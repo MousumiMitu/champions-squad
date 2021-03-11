@@ -23,6 +23,11 @@ const TeamDetails = () => {
     strSport,
     intFormedYear,
     strStadiumDescription,
+    strFacebook,
+    strTwitter,
+    strYoutube,
+    strTeamBanner,
+    strDescriptionEN,
   } = details;
 
   useEffect(() => {
@@ -36,12 +41,12 @@ const TeamDetails = () => {
     <div style={{ background: "rgb(3, 18, 59)" }}>
       <div className="details-box">
         <div className="logo-box">
-          <img src={strTeamBadge} alt="" />
+          <img src={strTeamBanner} alt="" />
         </div>
       </div>
       <div className="details-part">
-        <div className="row details-cart ">
-          <div className="col-md-6">
+        <div className=" details-cart ">
+          <div className="info-part">
             <h3>{strTeam}</h3>
             <h5>
               <FontAwesomeIcon className="me-2" icon={faMapMarkerAlt} />
@@ -60,26 +65,28 @@ const TeamDetails = () => {
               Gender: {strGender}
             </h5>
           </div>
-          <div className="col-md-6 img-box ">
-            {strGender === "Male" ? (
-              <img src={maleImg} />
-            ) : (
+          <div className="img-box ">
+            {strGender === "Female" ? (
               <img src={femaleImg} />
+            ) : (
+              <img src={maleImg} />
             )}
           </div>
         </div>
-        <div className="my-5">
+        <div className="my-5 description-area">
           <p>{strStadiumDescription}</p>
+          <br />
+          <p>{strDescriptionEN}</p>
         </div>
       </div>
       <footer className="text-center">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href={`https://${strFacebook}`} target="_blank">
           <i class="fab fa-facebook" style={{ color: "	#4267B2" }}></i>
         </a>
-        <a href="https://twitter.com/?lang=en" target="_blank">
+        <a href={`https://${strTwitter}`} target="_blank">
           <i class="fab fa-twitter" style={{ color: "white" }}></i>
         </a>
-        <a href="https://www.youtube.com/" target="_blank">
+        <a href={`https://${strYoutube}`} target="_blank">
           <i class="fab fa-youtube" style={{ color: "red" }}></i>
         </a>
       </footer>

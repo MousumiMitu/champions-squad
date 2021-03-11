@@ -3,19 +3,20 @@
   background-image: url("images/bg.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.9;
-  position: relative;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .logo-box {
-  width: 130px;
-  position: relative;
+  width: 65%;
+
+  /* margin: 0 auto; */
 }
 .logo-box img {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(360%, 60%);
+  border-radius: 20px;
 }
 .details-part {
   width: 82%;
@@ -23,21 +24,99 @@
   color: white;
 }
 .details-cart {
-  background-color: rgb(8, 139, 214);
+  background: linear-gradient(to right, rgb(8, 139, 214), rgb(7, 223, 243));
   padding: 10px;
   border-radius: 10px;
   color: rgb(230, 233, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.info-part {
+  width: 50%;
+  padding: 5px 20px;
+}
+.img-box {
+  width: 50%;
+}
 .img-box img {
-  width: 68%;
-  margin-left: 160px;
+  width: 60%;
+  margin-left: 175px;
 }
-footer {
+.description-area p {
+  text-align: justify;
 }
 footer .fab {
   font-size: 25px;
   margin-right: 15px;
   padding-bottom: 50px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .details-box {
+    height: 250px;
+  }
+  .details-cart {
+    background: linear-gradient(to bottom, rgb(8, 139, 214), rgb(7, 223, 243));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .info-part {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+    margin-left: 0.5px;
+  }
+}
+
+@media (min-width: 601px) {
+  .details-box {
+    height: 300px;
+  }
+  .details-cart {
+    background: linear-gradient(to bottom, rgb(8, 139, 214), rgb(7, 223, 243));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .info-part {
+    width: 100%;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+    margin-left: 1px;
+  }
+}
+
+@media (min-width: 800px) {
+  .details-cart {
+    background: linear-gradient(to right, rgb(8, 139, 214), rgb(7, 223, 243));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info-part {
+    width: 100%;
+  }
+  .img-box {
+    width: 50%;
+  }
+
+  .img-box img {
+    width: 100%;
+    margin-left: 1px;
+  }
 }

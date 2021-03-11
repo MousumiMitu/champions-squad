@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header-section">
       <div className="overlay">
-        <h3 className="text-light ">Team Tracker</h3>
+        <h3 className="text-light ">Champions Squad</h3>
       </div>
     </div>
   );
