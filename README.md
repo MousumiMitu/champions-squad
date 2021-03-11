@@ -1,4 +1,4 @@
-# React router project
+# Champions squad React router project
 
 Champions squad is a simple react router project of some renowned football teams information. Users can get any teams information details by click on explore button.
 
