@@ -9,5 +9,6 @@ Champions squad is a simple react router project of some renowned football teams
 - Using conditional formatting for change image according to gender
 - Responsive for mobile, tablet & desktop version
 - Used font awesome icon
+- icon icon
 
 [Live server link for Champions squad project](https://upbeat-davinci-e9b099.netlify.app).
